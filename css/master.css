@@ -1,0 +1,143 @@
+/* da cancellare */
+/* [class*="col-"] {
+  border: 1px solid red;
+  height: 200px;
+} */
+/* generali */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/* spaziature */
+.padding_t_b_60 {
+  padding: 60px 0;
+}
+.padding_t_b_20 {
+  padding: 20px 0;
+}
+.marg_top_40 {
+  margin-top: 40px;
+}
+
+/* screenshot */
+.container_screeshot {
+  width: 80%;
+  margin: 0 auto;
+}
+.container_screeshot img {
+  width: 80%;
+  margin: 0 auto;
+}
+.container_screeshot i {
+  font-size: 30px;
+}
+.container_screeshot i:first-child {
+  color: #00000080;
+}
+.ms_circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+.point_screen .ms_circle:first-child {
+  background-color: blue;
+}
+
+/* inizio header */
+/* inizio top header */
+#fix_header {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+}
+.ms_logo_header {
+  height: 25px;
+  margin-right: 40px;
+}
+/* fine top header */
+/* inizio jumbotron */
+#jumbo {
+  background-image: url(../img/bg_jumbotron.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ms_form_started {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+/* fine jumbotron */
+/* inizio customers */
+#customers {
+  background-color: #f3f5f9;
+  padding: 40px 0 30px;
+}
+
+.marg_auto {
+  width: 300px;
+  height: 170px;
+  margin: 0 auto;
+}
+/* fine custumers */
+/* fine header */
+/* inizio main */
+/* inizio distribution */
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+/* fine distribution */
+/* inizio developers */
+#developers {
+  background-color: #f3f5f9;
+  width: 100%;
+}
+/* fine developers */
+/* inizio regions */
+#regions {
+  background-color: lightblue;
+}
+
+.container_regions {
+  padding: 15px;
+}
+.container_regions:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+/* fine regions */
+/* inizio client */
+#client {
+  background-color: #f3f5f9;
+}
+/* fine client */
+/* inizio start */
+#start {
+  background-color: lightblue;
+  color: white;
+}
+/* fine start */
+/* fine main */
+/* inizio footer */
+#footer {
+  background-color: blue;
+}
+/* responsive smartphone */
+@media screen and (max-width:768px) {
+  /* generali */
+  /* screenshot */
+  .container_screeshot i {
+    display: none;
+  }
+  /* distribution */
+  #distribution .wrapper {
+    width: 100%;
+  }
+}
