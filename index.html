@@ -16,8 +16,8 @@
         <div class="container">
           <div class="row">
             <div class="col-sx-12 col-md-3">
-              <a href="#"><img class="ms_logo_header" src="img/logo.png" alt=""></a>
-              <i class="fas fa-bars pull-right visible-sm"></i>
+              <a class="push_logo" href="#"><img class="ms_logo_header" src="img/logo.png" alt=""></a>
+              <i class="fas fa-bars pull-right visible-xs visible-sm menu_footer"></i>
             </div>
             <div class="col-md-5 hidden-xs menu hidden-sm">
               <ul class="nav nav-pills">
@@ -32,8 +32,7 @@
                 <li><a href="#"></a>Docs</li>
                 <li><a href="#"></a>Support <i class="fas fa-angle-down"></i></li>
                 <li><a href="#"></a>Login</li>
-                <!-- <li><button type="button" class="btn btn-default btn-sm">Sign Up</button></li> -->
-                <li><button type="button" class="btn btn-default btn-sm">Sign Up</button></li>
+                <li><button type="button" class="btn btn-default btn-sm ms_button_SU blue">Sign Up</button></li>
               </ul>
             </div>
           </div>
@@ -42,16 +41,29 @@
       <!-- fine top header -->
       <!-- inizio jumbotron -->
       <section>
-        <div id="jumbo" class="container-fluid padding_t_b_60">
+        <div id="jumbo" class="padding_t_b_60">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-7">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h1>
-                <p>Lorem ipsum dolor  amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea cqui officia deserunt mollit anim id est laborum.</p>
+                <h1>The simplest cloud platform for Developers & teams.</h1>
+                <p class="text_jumbo">Deploy, manage and scale cloud application faster and more efficiendly on DigitalOcean. We make managing infrastructur easy for teams and businesses, whether you're running one virtual machine or ten thousand</p>
               </div>
               <div class="col-xs-12 col-sm-5">
-                <div class="ms_form_started">
-
+                <div class="form_jumb text-center">
+                  <h2>Deploy your app in seconds.</h2>
+                  <h2 class="blue">Get started now</h2>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="button" class="btn create_account">Create your account</button>
+                  <button type="button" class="btn SU_google">
+                    <img class="pull-left" src="img/google-icon.png" alt="">
+                    Sign Up with google
+                  </button>
+                  <p class="p_small">By signing up you agree to the <a class="blue" href="#">Terms of Services</a>.</p>
                 </div>
               </div>
             </div>
@@ -62,10 +74,10 @@
       <!-- fine jumbotron -->
       <!-- inizio customers -->
       <section>
-        <div id="customers" class="container-fluid text-center">
+        <div id="customers" class="text-center">
           <div class="container">
             <p>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</p>
-            <div class="row padding_t_b_20">
+            <div class="row">
               <div class="col-xs-6 col-sm-2">
               <img src="img/docker.svg" class="marg_auto img-responsive" alt="">
               </div>
@@ -85,7 +97,7 @@
               <img src="img/splunk.svg" class="marg_auto img-responsive" alt="">
               </div>
             </div>
-            <a href="#">View customer stories</a>
+            <a class="blue a_small class="a_small"" href="#">View customer stories &#62;</a>
           </div>
         </div>
       </section>
@@ -97,10 +109,10 @@
         <div id="distribution" class="padding_t_b_60">
           <div class="container">
             <h2 class="text-center">Deploy and scale seamlessly</h2>
-            <p>Our optimized configuration process saves your team time when running and scaling distributed application, AI machine learning workloads, hosted services, client website, or CI/CD environments.</p>
+            <p class="text-center">Our optimized configuration process saves your team time when running and scaling distributed application, AI machine learning workloads, hosted services, client website, or CI/CD environments.</p>
             <div class="wrapper">
-              <div class="row text-left marg_top_40">
-                <div class="col-xs-12 col-sm-4 image_descript">
+              <div class="row text-left">
+                <div class="col-xs-12 col-sm-3">
                   <ul class="list-unstyled">
                     <li>Deploy</li>
                     <li>Manage</li>
@@ -110,28 +122,24 @@
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                  <div class="image_descript">
-                    <img src="img\cluster-deploy.svg" alt="">
-                    <h3>cluster deployments</h3>
-                    <p>Prevision Multiple droplets (virtual machines) in second with our control panel, CLI, or directly againts our API.</p>
-                  </div>
-                  <div class="image_descript">
-                    <img src="img\one-click.svg" alt="">
-                    <h3>One-click apps</h3>
-                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
-                  </div>
+                  <img src="img\cluster-deploy.svg" alt="">
+                  <h3>cluster deployments</h3>
+                  <p class="p_small">Prevision Multiple droplets (virtual machines) in second with our control panel, CLI, or directly againts our API.</p>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                  <div class="image_descript">
-                    <img src="img\optimized-compute.svg" alt="">
-                    <h3>Optimized compute types</h3>
-                    <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
-                  </div>
-                  <div class="image_descript">
-                    <img src="img\global.svg" alt="">
-                    <h3>Global availability</h3>
-                    <p>Deploy to any of our data center regions around the world.</p>
-                  </div>
+                  <img src="img\optimized-compute.svg" alt="">
+                  <h3>Optimized compute types</h3>
+                  <p class="p_small">Get the compute resources you need with Standard or Optimized Droplets.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  <img src="img\one-click.svg" alt="">
+                  <h3>One-click apps</h3>
+                  <p class="p_small">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  <img src="img\global.svg" alt="">
+                  <h3>Global availability</h3>
+                  <p class="p_small">Deploy to any of our data center regions around the world.</p>
                 </div>
               </div>
             </div>
@@ -144,13 +152,13 @@
         <div id="developers" class="text-center padding_t_b_60">
           <div class="container">
             <h2>Designed for Developers</h2>
-            <p>Build more and spendless time managing your infrastructur with our easy-to-use control panel and API.</p>
+            <p class="text_developers">Build more and spendless time managing your infrastructur with our easy-to-use control panel and API.</p>
             <div class="container_screeshot">
               <i class="fas fa-angle-left"></i>
               <img class="image_screen" src="img\screenshot-createdroplet.jpg" alt="">
               <i class="fas fa-angle-right"></i>
             </div>
-            <p>Create compute servers in 55 seconds or less</p>
+            <p class="p_small">Create compute servers in 55 seconds or less</p>
             <div class="point_screen">
               <span class="ms_circle"></span>
               <span class="ms_circle"></span>
@@ -165,30 +173,30 @@
       <section>
         <div id="features" class="padding_t_b_60">
           <div class="container">
-            <h2 class="text-center">The features tour business need</h2>
+            <h2 class="marg_b_405text-center">The features tour business need</h2>
             <div class="row text-left">
               <div class="col-xs-12 col-sm-4">
                 <div class="image_descript">
                   <img src="img\pred-pricing.svg" alt="">
                   <h3>Predictable pricing</h3>
-                  <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
-                  <a href="#">Pricing &#62;</a>
+                  <p class="p_small">Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+                  <a class="a_small blue" href="#">Pricing &#62;</a>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-4">
                 <div class="image_descript">
                   <img src="img\world-class.svg" alt="">
                   <h3>World-class service</h3>
-                  <p>Free round-the-clock technical support for all customers. You'll fell the love.</p>
-                  <a href="#">Support &#62;</a>
+                  <p class="p_small">Free round-the-clock technical support for all customers. You'll fell the love.</p>
+                  <a class="a_small blue" href="#">Support &#62;</a>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-4">
                 <div class="image_descript">
                   <img src="img\reliable-platform.svg" alt="">
                   <h3>Reliable platform</h3>
-                  <p>More than 100,000 developers teams worldwide trust DigitalOcean to support they business with a 99.99% uptime SLA for all service</p>
-                  <a href="#">Security &#62;</a>
+                  <p class="p_small">More than 100,000 developers teams worldwide trust DigitalOcean to support they business with a 99.99% uptime SLA for all service</p>
+                  <a class="a_small blue" href="#">Security &#62;</a>
                 </div>
               </div>
             </div>
@@ -208,10 +216,10 @@
                     <div class="col-xs-1">
                       <p>AMS2</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Amsterdam, Netherlands</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62; </a>
                     </div>
                   </div>
@@ -221,10 +229,10 @@
                     <div class="col-xs-1">
                       <p>AMS3</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Amsterdam, Netherlands</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62; </a>
                     </div>
                   </div>
@@ -234,10 +242,10 @@
                     <div class="col-xs-1">
                       <p>BLR1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Bangalore, India</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -247,10 +255,10 @@
                     <div class="col-xs-1">
                       <p>FRA1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Frankfurt, German</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -260,10 +268,10 @@
                     <div class="col-xs-1">
                       <p>LON1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>London, UK</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -273,10 +281,10 @@
                     <div class="col-xs-1">
                       <p>NYC1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>New York, USA</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -289,10 +297,10 @@
                     <div class="col-xs-1">
                       <p>AMS2</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Amsterdam, Netherlands</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62; </a>
                     </div>
                   </div>
@@ -302,10 +310,10 @@
                     <div class="col-xs-1">
                       <p>AMS3</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Amsterdam, Netherlands</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62; </a>
                     </div>
                   </div>
@@ -315,10 +323,10 @@
                     <div class="col-xs-1">
                       <p>BLR1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Bangalore, India</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -328,10 +336,10 @@
                     <div class="col-xs-1">
                       <p>FRA1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>Frankfurt, German</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -341,10 +349,10 @@
                     <div class="col-xs-1">
                       <p>LON1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>London, UK</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>
@@ -354,10 +362,10 @@
                     <div class="col-xs-1">
                       <p>NYC1</p>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-4">
+                    <div class="col-xs-offset-1 col-xs-5">
                       <p>New York, USA</p>
                     </div>
-                    <div class="col-xs-offset-4 col-xs-2">
+                    <div class="col-xs-offset-2 col-xs-3">
                       <a href="#">test speed &#62;</a>
                     </div>
                   </div>

@@ -12,6 +12,29 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+/* grandezze font */
+h1 {
+ font-size: 3.5em;
+}
+h2,
+h3 {
+  font-weight: 700;
+  color: #031c4e;
+}
+h3 {
+  font-size: 1em;
+}
+p {
+  font-size: 1.3em;
+  color: #6b7893;
+}
+.p_small {
+  font-size: 0.8em;
+}
+.a_small {
+  font-size: 0.8em;
 }
 /* spaziature */
 .padding_t_b_60 {
@@ -20,8 +43,15 @@ body {
 .padding_t_b_20 {
   padding: 20px 0;
 }
-.marg_top_40 {
-  margin-top: 40px;
+.marg_b_40 {
+  margin-bottom: 40px;
+}
+/* .marg_top_60 {
+  margin-top: 60px;
+} */
+
+.blue {
+  color: #006aff;
 }
 
 /* screenshot */
@@ -35,6 +65,7 @@ body {
 }
 .container_screeshot i {
   font-size: 30px;
+  padding: 15px;
 }
 .container_screeshot i:first-child {
   color: #00000080;
@@ -53,13 +84,35 @@ body {
 /* inizio header */
 /* inizio top header */
 #fix_header {
+  color: #031c4e;
   width: 100%;
   height: 60px;
   margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.push_logo {
+  line-height: 60px;
 }
 .ms_logo_header {
   height: 25px;
   margin-right: 40px;
+}
+.menu_footer {
+  line-height: 60px;
+  color: #4d9bfd;
+  font-size: 20px;
+}
+
+#fix_header li {
+  margin: 0 7px;
+}
+#fix_header .ms_button_SU {
+  margin-top: 16px;
+  color: #006aff;
+  border: 1px solid #006aff;
+  font-weight: 600;
 }
 /* fine top header */
 /* inizio jumbotron */
@@ -67,18 +120,49 @@ body {
   background-image: url(../img/bg_jumbotron.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
-.ms_form_started {
-  width: 100%;
-  height: 200px;
+.text_jumbo {
+  color: #bbcdff;
+}
+
+.form_jumb {
+  padding: 20px 5px 15px;
   background-color: white;
+  color: black;
+}
+.form_jumb h2:nth-child(2) {
+  margin-top: 10px;
+}
+.form_jumb .create_account {
+  padding: 5px 0;
+  width: 100%;
+  background-color: #579aff;
+  color: white;
+}
+.form_jumb .SU_google {
+  width: 100%;
+  color: #626262;
+  background-color: white;
+  box-shadow: 1px 1px 1px 0;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.SU_google img {
+  height: 20px;;
+}
+.form_jumb .p_small {
+  color: #031c4e;
+}
+.form_jumb .p_small a {
+  text-decoration: underline;
 }
 /* fine jumbotron */
 /* inizio customers */
 #customers {
   background-color: #f3f5f9;
-  padding: 40px 0 30px;
+  padding: 60px 0 30px;
 }
 
 .marg_auto {
@@ -92,7 +176,13 @@ body {
 /* inizio distribution */
 .wrapper {
   width: 75%;
-  margin: 0 auto;
+  margin: 60px auto 0;
+}
+
+.wrapper li {
+  border-left: 1px solid #494b4f;
+  padding: 10px 5px;
+  color: #6b7893;
 }
 /* fine distribution */
 /* inizio developers */
@@ -100,17 +190,42 @@ body {
   background-color: #f3f5f9;
   width: 100%;
 }
-/* fine developers */
-/* inizio regions */
-#regions {
-  background-color: lightblue;
+
+.text_developers {
+  margin: 30px 0 60px;
 }
 
+#developers .p_small {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  color: #031c4e;
+}
+/* fine developers */
+/* inizio features */
+/* fine features */
+/* inizio regions */
+#regions {
+  background-image: linear-gradient(#573bf8, #101ec4);
+}
+#regions p {
+  font-size: 0.8em;
+  color: #acbce4;
+}
+#regions a {
+  font-size: 0.8em;
+  color: #00d7d2;
+}
+#regions h2 {
+  color: white;
+}
 .container_regions {
-  padding: 15px;
+  padding: 10px;
 }
 .container_regions:not(:last-child) {
   border-bottom: 1px solid black;
+}
+#regions .container_regions .col-xs-1 p {
+  color: white;
 }
 /* fine regions */
 /* inizio client */
@@ -120,14 +235,20 @@ body {
 /* fine client */
 /* inizio start */
 #start {
-  background-color: lightblue;
+  background-image: linear-gradient(#573bf8, #101ec4);
   color: white;
 }
 /* fine start */
 /* fine main */
 /* inizio footer */
 #footer {
-  background-color: blue;
+  background-color: #031c4e;
+}
+/* responsive generale */
+@media screen and (max-width:992px) {
+  h1 {
+    font-size: 2em;
+  }
 }
 /* responsive smartphone */
 @media screen and (max-width:768px) {
