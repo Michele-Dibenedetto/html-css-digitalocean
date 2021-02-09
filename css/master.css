@@ -246,6 +246,7 @@ p {
   margin-bottom: 30px;
   background-color: white;
   display: inline-block;
+  vertical-align: middle
 }
 .slide_rockerbox img {
   margin-bottom: 20px;
@@ -259,8 +260,7 @@ p {
   font-weight: 700;
 }
 #client .container_screeshot i {
-  position: relative;
-  bottom: 90px;
+  display: inline-block;
 }
 /* fine client */
 /* inizio start */
